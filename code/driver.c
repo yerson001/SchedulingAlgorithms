@@ -1,10 +1,3 @@
-/**
- * Driver.c
- *
- * Schedule is in the format
- *
- *  [name] [priority] [CPU burst]
- */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -36,7 +29,6 @@ int main(int argc, char *argv[])
         burst = atoi(strsep(&temp,","));
         printf("%s\t%d\t\t%d\n", name,priority,burst);
 
-        // add the task to the scheduler's list of tasks
         add(name,priority,burst);
         free(temp);
     }
@@ -44,7 +36,7 @@ int main(int argc, char *argv[])
     fclose(in);
     
     printf("\n");
-    // invoke the scheduler
+
     schedule();
 
     return 0;

@@ -1,10 +1,3 @@
-# makefile for scheduling program
-#
-# make rr - for round-robin scheduling
-# make fcfs - for FCFS scheduling
-# make sjf - for SJF scheduling
-# make priority - for priority scheduling
-# make priority_rr - for priority with round robin scheduling
 
 CC=gcc
 CFLAGS=-Wall
